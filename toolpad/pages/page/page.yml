@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mui/mui-toolpad/v0.3.0/docs/schemas/v1/definitions.json#properties/Page
+
+apiVersion: v1
+kind: page
+spec:
+  title: Default page
+  alias:
+    - -rtA8Sp
+  content:
+    - component: Tabs
+      name: tabs
+    - component: DataGrid
+      name: dataGrid
+      props:
+        rowsSource: dataProvider
+        columns:
+          - field: name
+          - field: email
+          - field: seat
+          - field: status
+          - field: actions
+  display: shell
